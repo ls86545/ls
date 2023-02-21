@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			canvas {
+				display: block;
+				border: 1px solid #000000;
+				margin: 0 auto;
+				/*background: gold;*/
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+
+				var canvas = document.getElementById("canvas");
+				var ctx = canvas.getContext("2d");
+				canvas.width = 400;
+				canvas.height = 400;
+				var i = 0;
+
+				setInterval(function() {
+					
+					i+=20;
+					
+					function close(){
+					ctx.beginPath();
+					ctx.arc(200, 200, 150, 0, 360 * Math.PI / 180);
+					ctx.fillStyle = "#FFD700";
+					ctx.fill();
+//					ctx.strokeStyle = "#FFD777";
+//					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.ellipse(140, 125, 30, 5, 0.6, 180 * Math.PI / 180, false);
+
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.ellipse(110, 114, 20, 8, 0.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.ellipse(260, 125, 30, 5, -0.6, 190 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.ellipse(290, 113, 20, 7, -0.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.fillStyle = "#DF5000"
+					ctx.fillRect(80, 160, 80, 5);
+					ctx.fillRect(240, 160, 80, 5);
+					ctx.closePath();
+
+					ctx.beginPath();
+
+					ctx.fillStyle = "#FDCA62";
+					ctx.fillRect(80, 170, 80, 30);
+					ctx.fillRect(240, 170, 80, 30);
+
+					ctx.beginPath();
+					ctx.ellipse(213, 250, 8, 10, 3.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#FF0000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					
+					ctx.closePath();
+					ctx.beginPath();
+					ctx.ellipse(195, 250, 8, 10, 3.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#FF0000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+					}
+					
+					
+					function open(){	
+					
+					ctx.beginPath();
+					ctx.arc(200, 200, 150, 0, 360 * Math.PI / 180);
+					ctx.fillStyle = "#FFD700";
+					ctx.fill();
+//					ctx.strokeStyle = "#FFD777";
+//					ctx.stroke();
+					ctx.closePath();
+					
+
+					//左眉毛
+					ctx.beginPath();
+					ctx.ellipse(140, 80, 30, 5, 0.6, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+					ctx.ellipse(110, 69, 20, 8, 0.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					//右眉毛
+					ctx.beginPath();
+					ctx.ellipse(260, 80, 30, 5, -0.6, 190 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+					
+					ctx.beginPath();
+					ctx.ellipse(290, 69, 20, 7, -0.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#DF5000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+
+					ctx.beginPath();
+
+					ctx.fillStyle = "#FDCA62";
+					ctx.fillRect(80, 170, 80, 30);
+					ctx.fillRect(240, 170, 80, 30);
+
+					ctx.beginPath();
+					ctx.arc(110, 130, 50, 0, 360 * Math.PI / 180, false);
+					ctx.lineWidth = 3;
+					ctx.strokeStyle = "#DF5000";
+					ctx.fillStyle = "#FFFFFF";
+					ctx.fill();
+					ctx.stroke();
+					
+					ctx.beginPath();
+					ctx.arc(120, 130, 10, 0, 360 * Math.PI / 180, false);
+					ctx.lineWidth = 3;
+					ctx.strokeStyle = "#000";
+					ctx.fillStyle = "#000";
+					ctx.fill();
+					ctx.stroke();
+
+					ctx.beginPath();
+					ctx.arc(290, 130, 50, 0, 360 * Math.PI / 180, false);
+					ctx.lineWidth = 3;
+					ctx.strokeStyle = "#DF5000";
+					ctx.fillStyle = "#FFFFFF";
+					ctx.fill();
+					ctx.stroke();
+
+					ctx.beginPath();
+					ctx.arc(280, 130, 10, 0, 360 * Math.PI / 180, false);
+					ctx.lineWidth = 3;
+					ctx.strokeStyle = "#000";
+					ctx.fillStyle = "#000";
+					ctx.fill();
+					ctx.stroke();
+
+					ctx.beginPath();
+					ctx.ellipse(213, 200, 8, 10, 3.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#FF0000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+					
+					ctx.beginPath();
+					ctx.ellipse(195, 200, 8, 10, 3.1, 180 * Math.PI / 180, false);
+					ctx.strokeStyle = "#FF0000";
+					ctx.lineWidth = 5;
+					ctx.stroke();
+					ctx.closePath();
+					
+					ctx.beginPath();
+					
+					
+					ctx.ellipse(205,235,25,13,1.55,360*Math.PI/180,false);
+					ctx.stroke();
+					ctx.fillStyle="#FF0000"
+					ctx.fill();
+
+					
+					}
+					if(i>=1000){
+						ctx.clearRect(0, 0, 400, 400);
+						open();
+						
+				}
+					if(i>=2000){
+						i=0;
+						ctx.clearRect(0, 0, 400, 400);
+						close();
+					}
+					
+
+
+					
+				},20)
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="" height=""></canvas>
+	</body>
+
+</html>
